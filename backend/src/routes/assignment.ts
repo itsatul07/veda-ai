@@ -15,9 +15,9 @@ const upload = multer({ dest: 'uploads/', limits: { fileSize: 10 * 1024 * 1024 }
 router.use(authMiddleware);
 
 router.post('/', upload.single('sourceFile'), createAssignment);
+router.get('/myassignments', getAssignmentsByTeacher);
 router.get("/:id/result", getAssignmentResult);
 router.get('/:id', getAssignment);
-router.get('/myassignments', getAssignmentsByTeacher);
 router.delete('/:id', deleteAssignment);
 
 export default router;
