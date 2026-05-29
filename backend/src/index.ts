@@ -23,7 +23,7 @@ const io = new Server(httpServer, {
 
 app.use(cors({
   origin: ['http://localhost:3000', 'https://veda-ai-sage.vercel.app'],
-  methods: ['GET', 'POST', 'OPTIONS'],
+  methods: ['GET', 'POST', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 app.use(express.json({ limit: '10mb' }));
