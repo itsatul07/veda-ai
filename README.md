@@ -158,7 +158,3 @@ veda-ai/
 | GET | `/api/assignments/:id` | Get assignment details |
 | GET | `/api/assignments/:id/result` | Get assignment result |
 | DELETE | `/api/assignments/:id` | Delete assignment |
-
-## License
-
-MIT License
